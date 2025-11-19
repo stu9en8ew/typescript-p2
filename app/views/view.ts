@@ -1,4 +1,4 @@
-export class View<T> {
+export abstract class View<T> {
     
     protected elemento: HTMLElement;
 
@@ -11,8 +11,6 @@ export class View<T> {
 
     }
 
-    template(model: T): string {
-        throw Error ('Daught classes should be implements template metod');
-    }
+    abstract template(model: T): string;
     
 }

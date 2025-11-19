@@ -1,13 +1,8 @@
-export class MensagemView {
-    constructor(seletor) {
-        this.element = document.querySelector(seletor);
-    }
+import { View } from "./view.js";
+export class MensagemView extends View {
     template(model) {
         return ` 
             <p class="alert alert-info">${model}</p>
         `;
-    }
-    update(model) {
-        this.element.innerHTML = this.template(model);
     }
 }

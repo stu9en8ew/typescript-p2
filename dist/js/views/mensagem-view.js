@@ -1,20 +1,13 @@
 export class MensagemView {
-
-    private element: HTMLElement;
-
-    constructor(seletor: string){
+    constructor(seletor) {
         this.element = document.querySelector(seletor);
     }
-
-    template(model: string): string {
+    template(model) {
         return ` 
             <p class="alert alert-info">${model}</p>
         `;
     }
-
-    update(model : string): void {
+    update(model) {
         this.element.innerHTML = this.template(model);
-
     }
-
 }

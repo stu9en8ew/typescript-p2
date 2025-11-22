@@ -5,7 +5,4 @@ export class View {
     update(model) {
         this.elemento.innerHTML = this.template(model);
     }
-    template(model) {
-        throw Error('Daught classes should be implements template metod');
-    }
 }

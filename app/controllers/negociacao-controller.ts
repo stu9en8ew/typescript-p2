@@ -10,8 +10,8 @@ export class NegociacaoController {
     private negociacoes = new Negociacoes();
     private negociacoesView = new NegociacoesView('#negociacoesView');
     private mensagemView = new MensagemView('#mensagemView');
-    private SABADO = 0;
-    private DOMINGO = 6;
+    private readonly SABADO = 0;
+    private readonly DOMINGO = 6;
 
     constructor() {
         this.inputData = document.querySelector('#data');
